@@ -10,6 +10,7 @@ const ContextProvider = (props) => {
 
     const jobPostsHandler =(jobPostsObj) =>{ // Handler for storing job posts data arrived from api call
       const newJobPosts= []
+      //get only the first 10 jobs posts from the response data
       for(let i = 0; i< 10; i++){
         newJobPosts.push({datePosted: new Date(jobPostsObj.jobs[i].OBJpostingDate) ,...jobPostsObj.jobs[i]})
       }
