@@ -29,7 +29,7 @@ const JobPosts = () => {
     let jobPosts = appCtx.jobPosts.filter(post=>{
         const today = new Date()
         const week = new Date()
-        week.setDate(week.getDate() -4)
+        week.setDate(week.getDate() -8) // set the last day of the current week ()
         return post.datePosted <= today && post.datePosted >= week 
     })
     //The app will display all job posting by default
