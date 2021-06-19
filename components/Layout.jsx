@@ -1,8 +1,6 @@
 import Head from 'next/head'
 import React from 'react'
 import classes from '../styles/styles.module.css'
-import Image from 'next/image'
-import sas from '../assets/zippia-logo-white.png'
 const Layout = (props) => {
     return (
         <React.Fragment>
